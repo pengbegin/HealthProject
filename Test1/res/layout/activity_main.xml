@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background2"
     android:orientation="vertical" >
 
     <LinearLayout
         android:id="@+id/llMultiMedia"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/xlarge_padding"
         android:orientation="vertical"
-        android:padding="@dimen/large_padding"
-        android:layout_marginTop="@dimen/xlarge_padding" >
+        android:padding="@dimen/large_padding" >
 
         <LinearLayout
             style="@style/ImageRowLayout">
@@ -26,25 +26,31 @@
 
             <RelativeLayout
 				style="@style/ImageRLayout.Middle">
+
 	            <ImageView
-					android:id="@+id/create_image_2"
-					style="@style/ImageView" />
+	                android:id="@+id/create_image_2"
+	                style="@style/ImageView"
+	                android:src="@drawable/b2" />
+
 	        </RelativeLayout>
 
             <RelativeLayout
 				style="@style/ImageRLayout">
+
 	            <ImageView
-					android:id="@+id/create_image_3"
-					style="@style/ImageView" />
+	                android:id="@+id/create_image_3"
+	                style="@style/ImageView"
+	                android:src="@drawable/askthedoctor6" />
+
 	        </RelativeLayout>
 
         </LinearLayout>
         
         <LinearLayout
-
-        style="@style/DamageTypeOuterLayout" >
-
-
+            style="@style/DamageTypeOuterLayout"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin" >
 
         <RelativeLayout
 
@@ -67,16 +73,14 @@
 
             style="@style/DamageTypeLayout.Middle" >
 
-
-
             <TextView
-
                 android:id="@+id/create_damage_image_type_text_2"
-                android:text="abd"
-
-                style="@style/DamageTypeText" />
-
-               
+                style="@style/DamageTypeText"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="Self Report" />
 
         </RelativeLayout>
 
@@ -91,7 +95,7 @@
             <TextView
 
                 android:id="@+id/create_damage_image_type_text_3"
-                android:text="abd"
+                android:text="QA"
 
                 style="@style/DamageTypeText" />
 
@@ -105,22 +109,29 @@
 				style="@style/ImageRLayout">
 
 	            <ImageView
-					android:id="@+id/create_image_4"
-					style="@style/ImageView" />
+	                android:id="@+id/create_image_4"
+	                style="@style/ImageView"
+	                android:src="@drawable/regularreport1" />
+
 	        </RelativeLayout>
 
             <RelativeLayout
 				style="@style/ImageRLayout.Middle">
+
 	            <ImageView
-					android:id="@+id/create_image_5"
-					style="@style/ImageView" />
+	                android:id="@+id/create_image_5"
+	                style="@style/ImageView"
+	                android:src="@drawable/regularreport4" />
+
 	        </RelativeLayout>
 
             <RelativeLayout
 				style="@style/ImageRLayout">
+
 	            <ImageView
-					android:id="@+id/create_image_6"
-					style="@style/ImageView" />
+	                android:id="@+id/create_image_6"
+	                style="@style/ImageView"
+	                android:src="@drawable/regularreport6" />
 	
 	        </RelativeLayout>
 
@@ -135,14 +146,10 @@
 
             style="@style/DamageTypeLayout">
 
-
-
             <TextView
-
                 android:id="@+id/create_damage_image_type_text_4"
-                android:text="@string/hello_world"
-
-                style="@style/DamageTypeText" />
+                style="@style/DamageTypeText"
+                android:text="Regular Report" />
 
         </RelativeLayout>
 

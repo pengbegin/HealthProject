@@ -14,13 +14,18 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 
 	private ImageView image1;
+	private ImageView image2;
+	private ImageView imageQA;
+	private ImageView image4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
         image1 = (ImageView) findViewById(R.id.create_image_1);
-        
+        image2 = (ImageView) findViewById(R.id.create_image_2);
+        imageQA = (ImageView) findViewById(R.id.create_image_3);
+        image4 = (ImageView) findViewById(R.id.create_image_4);
         image1.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -29,6 +34,44 @@ public class MainActivity extends Activity {
 				
 				// Toast.makeText(getApplicationContext(), "Click On Image 1", Toast.LENGTH_LONG).show();
 				Intent intent = new Intent(MainActivity.this, FirstActivity.class);
+				startActivity(intent);
+		
+			}
+		});
+        
+        image2.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+				// Toast.makeText(getApplicationContext(), "Click On Image 1", Toast.LENGTH_LONG).show();
+				Intent intent = new Intent(MainActivity.this, SelfReportAct.class);
+				startActivity(intent);
+		
+			}
+		});
+        
+        image4.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+				// Toast.makeText(getApplicationContext(), "Click On Image 1", Toast.LENGTH_LONG).show();
+				Intent intent = new Intent(MainActivity.this, RegularReportAct.class);
+				startActivity(intent);
+		
+			}
+		});
+
+        imageQA.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				
+				Intent intent = new Intent(MainActivity.this, QAActivity.class);
 				startActivity(intent);
 		
 			}

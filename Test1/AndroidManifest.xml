@@ -9,6 +9,7 @@
         android:targetSdkVersion="21" />
 
     <application
+        android:name="greendroid.app.GDApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -26,6 +27,48 @@
             android:name=".FirstActivity"
             android:label="@string/title_activity_first" >
         </activity>
+        <activity
+            android:name=".QAActivity"
+            android:label="@string/title_activity_qa" >
+        </activity>
+        <activity
+            android:name=".QaAskActivity"
+            android:label="@string/title_activity_qa_ask" >
+        </activity>
+        <activity
+            android:name=".QaFeedBackActivity"
+            android:label="@string/title_activity_qa_feed_back" >
+        </activity>
+        <activity
+            android:name=".QaFbPrescriptionActivity"
+            android:label="@string/title_activity_inbox" >
+        </activity>
+        <activity
+            android:name=".QaFbAnswerActivity"
+            android:label="@string/title_activity_outbox" >
+        </activity>
+        <activity
+            android:name=".SelfReportAct"
+            android:label="@string/title_activity_pre_exer" >
+        </activity>
+        <activity
+            android:name=".AfterExerAct"
+            android:label="@string/title_activity_after_exer" >
+        </activity>
+        <activity
+            android:name=".RegularReportAct"
+            android:label="@string/title_activity_regular_report" >
+        </activity>
     </application>
+
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
 
 </manifest>
