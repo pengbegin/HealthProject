@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -39,14 +40,14 @@ public class QaFbAnswerActivity extends Activity {
     JSONArray answers = null;
  
     // Outbox JSON url
-    private static final String URL = "http://10.0.2.2/conn.php";
+    private static final String URL = "http://10.0.2.2/conn1.php";
      
     // ALL JSON node names
     private static final String TAG_MESSAGES = "posts";
 
-    private static final String TAG_SUB =  "subject";
+    private static final String TAG_SUB =  "content";
     private static final String TAG_DID =  "did";
-    private static final String TAG_DATE = "Date";
+    private static final String TAG_DATE = "time";
     
     private static final String TAG_FRE = "frequency";
     private static final String TAG_HR = "targetHR";
@@ -91,7 +92,9 @@ public class QaFbAnswerActivity extends Activity {
             // Building Parameters
             
         	List<NameValuePair> params = new ArrayList<NameValuePair>();
-             
+        	params.add(new BasicNameValuePair("s", "SELECT * FROM answers"));
+        	
+        	
             // getting JSON string from URL
             JSONObject json = JSONparser.makeHttpRequest(URL, "POST",
                     params);
@@ -171,9 +174,7 @@ public class QaFbAnswerActivity extends Activity {
          	    				@Override
          	    				public void onClick(DialogInterface dialog, int which) {
          	    					dialog.dismiss();
-         	    					//  do something
-         		   					
-
+         	    					//  do something         		   					
          	    				}
          	    			}).create();
          	    			dialog.show();

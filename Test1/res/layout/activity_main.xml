@@ -56,14 +56,10 @@
 
             style="@style/DamageTypeLayout">
 
-
-
             <TextView
-
                 android:id="@+id/create_damage_image_type_text_1"
-                android:text="@string/hello_world"
-
-                style="@style/DamageTypeText" />
+                style="@style/DamageTypeText"
+                android:text="ECG" />
 
         </RelativeLayout>
 
@@ -159,16 +155,10 @@
 
             style="@style/DamageTypeLayout.Middle" >
 
-
-
             <TextView
-
                 android:id="@+id/create_damage_image_type_text_5"
-                android:text="abd"
-
-                style="@style/DamageTypeText" />
-
-               
+                style="@style/DamageTypeText"
+                android:text="Configuration" />
 
         </RelativeLayout>
 
@@ -178,14 +168,10 @@
 
             style="@style/DamageTypeLayout">
 
-
-
             <TextView
-
                 android:id="@+id/create_damage_image_type_text_6"
-                android:text="abd"
-
-                style="@style/DamageTypeText" />
+                style="@style/DamageTypeText"
+                android:text="Help" />
 
         </RelativeLayout>
 

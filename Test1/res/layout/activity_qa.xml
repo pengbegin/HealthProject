@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background2"
     android:orientation="vertical" >
 
     <LinearLayout
@@ -17,25 +17,32 @@
             style="@style/ImageRowLayout">
             <RelativeLayout
                 style="@style/ImageRLayout">
+
 	            <ImageView
 	                android:id="@+id/create_image_sa"
-	                android:src="@drawable/b1"
-	                
-	                style="@style/ImageView" />
+	                style="@style/ImageView"
+	                android:src="@drawable/regularreport4" />
+
         	</RelativeLayout>
 
             <RelativeLayout
 				style="@style/ImageRLayout.Middle">
+
 	            <ImageView
-					android:id="@+id/create_image_ask"
-					style="@style/ImageView" />
+	                android:id="@+id/create_image_ask"
+	                style="@style/ImageView"
+	                android:src="@drawable/askthedoctor6" />
+
 	        </RelativeLayout>
 
             <RelativeLayout
 				style="@style/ImageRLayout">
+
 	            <ImageView
-					android:id="@+id/create_image_fb"
-					style="@style/ImageView" />
+	                android:id="@+id/create_image_fb"
+	                style="@style/ImageView"
+	                android:src="@drawable/regularreport5" />
+
 	        </RelativeLayout>
 
         </LinearLayout>

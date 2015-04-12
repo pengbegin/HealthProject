@@ -26,7 +26,7 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 public class QaFbPrescriptionActivity extends Activity {
-	private CommonFunc cf= new CommonFunc();
+	
 	private ProgressDialog pDialog;
     private ListView listView;
     private ListAdapter adapter;
@@ -40,7 +40,7 @@ public class QaFbPrescriptionActivity extends Activity {
     JSONArray prescriptions = null;
  
     // Inbox JSON url
-    private static String URL = "http://10.0.2.2/conn.php";
+    private static final String URL = "http://10.0.2.2/conn.php";
      
     // ALL JSON node names
     private static final String TAG_MESSAGES = "posts";
@@ -48,13 +48,7 @@ public class QaFbPrescriptionActivity extends Activity {
     private static final String TAG_SUB =  "subject";
     private static final String TAG_DID =  "did";
     private static final String TAG_DATE = "Date";
-    
-    private static final String TAG_FRE = "frequency";
-    private static final String TAG_HR = "targetHR";
-    private static final String TAG_RPE = "RPE";
-    private static final String TAG_MET = "MET";
-    private static final String TAG_DUR = "duration";
-    private static final String TAG_CAL = "Calorie";
+
  
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -94,9 +88,8 @@ public class QaFbPrescriptionActivity extends Activity {
         	String query = "SELECT * FROM prescription"; 
         	List<NameValuePair> params = new ArrayList<NameValuePair>();
 //            params.add(new BasicNameValuePair("pid", query));
-        	//System.out.print("IP:"+cf.getLocalHostIp());
-        	//URL="http://"+cf.getLocalHostIp()+"/conn.php";
         	
+        	params.add(new BasicNameValuePair("s", query));
             // getting JSON string from URL
             JSONObject json = jsonParser.makeHttpRequest(URL, "POST",
                     params);

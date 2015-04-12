@@ -20,5 +20,6 @@
     <string name="action_example">Example action</string>
     <string name="title_activity_after_exer">Please answer all questions below after exercise.</string>
     <string name="title_activity_regular_report">Please finish the regular report regularly.</string>
+    <string name="title_activity_alarm">AlarmActivity</string>
 
 </resources>
